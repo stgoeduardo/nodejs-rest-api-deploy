@@ -1,0 +1,34 @@
+### Recuperar todas las peliculas
+GET http://localhost:3000/movies
+
+### Reciuperar una pelicula por id
+GET http://localhost:3000/movies/2e6900e2-0b48-4fb6-ad48-09c7086e54fe
+
+### Recuperar todas las peliculas por un género
+GET http://localhost:3000/movies?genre=terror
+
+### Crear una pelicula con POST
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "sql": "SELECT * from users",
+  "title": "Halloween",
+  "year": 2018,
+  "director": "David Gordon Green",
+  "duration": 105,
+  "poster": "https://image.tmdb.org/t/p/original/l578Zg8oIyEJdfzGIw8iewUIxPk.jpg",
+  "genre": [
+      "Terror",
+      "Thriller",
+      "Slasher"
+  ]
+}
+
+### Actualizar una peliculaa
+PATCH http://localhost:3000/movies/9e6106f0-848b-4810-a11a-3d832a5610f9
+Content-Type: application/json
+
+{
+  "year": 1995
+}

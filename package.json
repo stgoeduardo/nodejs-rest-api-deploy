@@ -1,0 +1,27 @@
+{
+  "name": "api-rest-nodejs",
+  "version": "1.0.0",
+  "description": "Mi primer api rest con nodejs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --watch app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "rest"
+  ],
+  "author": "Eduardo Santiago",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "4.19.2",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
